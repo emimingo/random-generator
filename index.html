@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Random Number Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <header class="hedaer">
+            Set a range for minimun & maximun number value.<br />
+            Then click "generate" to receive a random number.
+        </header>
+        <section class="minimum">
+            <span class="tag">Min:</span><input type="number" name="min" id="input-min" min="0" max="1000000" value="10" maxlength="7"  onKeyPress="return (event.charCode >= 48 && event.charCode <= 57 && this.value.length < 7)">    
+        </section>
+        <section class="maximum">
+            <span class="tag">Max:</span><input type="number" name="max" id="input-max" min="0" max="1000000" value="100" maxlength="7" onKeyPress="return (event.charCode >= 48 && event.charCode <= 57 && this.value.length < 7)">
+        </section>
+        <section class="button">
+            <button id="btn-generate">Generate</button>
+        </section>
+        <section class="result">
+            <span class="tag-result">Hello!</span>
+        </section>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

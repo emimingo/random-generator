@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+
+header{
+    line-height: 24px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: aqua;
+    margin-top: 20px;
+    padding: 50px;
+}
+.tag, .tag-result{
+    display: block;
+}
+
+.tag-result{
+    border: 4px solid yellow;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 40px;
+    color: red;
+
+}
+
+.minimum,
+.maximum{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.minimum{
+    margin-top: 30px;
+}
+
+#input-min,
+#input-max{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.button{
+    margin-top: 40px;
+}
+
+#btn-generate{
+    width: 280px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #343434;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
